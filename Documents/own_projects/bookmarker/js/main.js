@@ -28,6 +28,8 @@ function saveBookmark(event){
     bookmarks.push(bookmark);
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
   }
+  myForm.reset(); 
+
   fetchBookmarks();
   // prevent form from submitting
   event.preventDefault();
